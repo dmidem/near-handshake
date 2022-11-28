@@ -51,7 +51,7 @@ Additional information about NEAR validator node building and usage can be found
 https://near-nodes.io/validator/compile-and-run-a-node
 https://near-nodes.io/validator/running-a-node
 
-## Compiling and Running the handshake tool
+## Compiling and running the handshake tool
 
 1. Assuming that NEAR blockchain validator node is running (see this doc above), open a new terminal
 window and change the current directory to the root of the handshake tool repository.
