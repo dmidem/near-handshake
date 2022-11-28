@@ -37,6 +37,7 @@ make neard
 ```
 ./target/release/neard --home ~/.near init --chain-id localnet
 ```
+(run this command from the root of the NEAR core repository).
 
 6. Ensure that ***config.json***, ***node_key.json***, ***validator_key.json***, and ***genesis.json*** configuration files are created in ***~/.near*** directory.
 
@@ -45,6 +46,7 @@ make neard
 ```
 ./target/release/neard --home ~/.near run
 ```
+(run this command from the root of the NEAR core repository).
 
 Additional information about NEAR validator node building and usage can be found here:
 
@@ -53,8 +55,7 @@ https://near-nodes.io/validator/running-a-node
 
 ## Compiling and running the handshake tool
 
-1. Assuming that NEAR blockchain validator node is running (see this doc above), open a new terminal
-window and change the current directory to the root of the handshake tool repository.
+1. Open a new terminal window and change the current directory to the root of the handshake tool repository.
 
 2. Build the handshake tool:
 
@@ -68,7 +69,7 @@ cargo build
 cargo test
 ```
 
-4. Run the handshake tool with default arguments:
+4. Assuming that NEAR blockchain validator node is running (see this doc above), run the handshake tool with default arguments:
 
 ```
 cargo run
@@ -77,7 +78,8 @@ cargo run
 It should connect to the local instance of the validator node, perform the handshake and display the resulting
 handshake response returned from the node.
 
-It's possible to run the handshake tool with custom options using command line arguments. Run the following command to see a description of the arguments:
+It's possible to run the handshake tool with custom options using command line arguments. Run the following command to see
+a description of the arguments:
 
 ```
 cargo run -- -h
